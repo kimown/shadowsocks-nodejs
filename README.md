@@ -1,6 +1,22 @@
 shadowsocks-nodejs
 ==================
 
+npm install
+
+启动客户端：
+npm run local
+启动服务器端：
+npm run server
+查看日志
+pm2 logs
+关闭程序
+pm2 kill 
+
+
+
+
+——————————————
+
 [![NPM version]][NPM] [![Build Status]][Travis CI]
 
 shadowsocks-nodejs is a node.js port of [shadowsocks].

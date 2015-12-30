@@ -26,6 +26,8 @@
     "ssserver": "./bin/ssserver"
   },
   "scripts": {
+    "local":"npm install && pm2 start ./bin/sslocal --name sslocal",
+    "server":"npm install && pm2 start ./bin/ssserver --name ssserver",
     "test": "cake test"
   },
   "homepage": "https://github.com/clowwindy/shadowsocks-nodejs",
