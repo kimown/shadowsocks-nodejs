@@ -1,0 +1,11 @@
+NodeJS中的TCP Socket编程
+
+	想知道在Node中sockets怎么工作的？在Node中，有三个sockets的类型:TCP\UDP和UNIX域。在这篇文章中，我将会展示NodeJS中基本的TCP socket编程。
+	在TCP socket编程中你可以编写两方面的内容，一是服务器端，二是客户端。一个TCP服务端监听来自客户端的连接，然后发送数据给客户端。一个TCP客户端连接一个TCP服务端，然后交换数据。客户端和服务器端的通信都是通过socket.
+
+编写TCP服务端
+下面是一个使用Node编写的简单的TCP服务端。充分阅读注释，它解释了代码是怎么运行的。
+
+//创建一个服务端的实例，然后链式一个监听函数(就是.listen(PORT,HOST)这一段)
+//传递给net.createServer()的函数是“connection”事件的事件处理函数
+
