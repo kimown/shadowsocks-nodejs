@@ -12,7 +12,7 @@ switch (platform){
     case 'linux':
         for(var key in network){
             if(key=='eth0'&&ip==null){
-                network[key].forEach((v)=>{
+                gnetwork[key].forEach((v)=>{
                     if(v.family!='IPv6'){
                        ip=v.address;
                     }
