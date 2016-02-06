@@ -11,18 +11,17 @@ let ip=null;
 switch (platform){
     case 'linux':
         for(var key in network){
-            if(key=='eth0'){
+            if(key=='eth0'&&ip==null){
                 network[key].forEach((v)=>{
                     if(v.family!='IPv6'){
                        ip=v.address;
                     }
                 })
-            }
-            if(ip==null&&key.indexOf('vmnet')==-1){
+            }else if(key=='wlan0'&&ip==null){
                 network[key].forEach((v)=>{
-                        if(v.internal!=true&&v.family!='IPv6'){
-                            console.log(v.address);
-                        }
+                    if(v.family!='IPv6'){
+                        ip=v.address;
+                    }
                 })
             }
         }
