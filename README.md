@@ -41,3 +41,14 @@ node.js?
 [Travis CI]:       https://travis-ci.org/clowwindy/shadowsocks-nodejs
 [shadowsocks]:     https://github.com/clowwindy/shadowsocks
 [Other versions]:  https://github.com/clowwindy/shadowsocks/wiki/Ports-and-Clients
+
+
+{
+    "server":"52.193.32.25",
+    "server_port":8388,
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "password":"password",
+    "timeout":600,
+    "method":"aes-256-cfb"
+}
