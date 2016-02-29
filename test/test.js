@@ -38,3 +38,20 @@ dns.reverse(a, (err, hostnames) => {
     }
     console.log(`reverse for ${a}: ${JSON.stringify(hostnames)}`);
 });
+
+/**
+
+
+
+ {
+    "server":"52.193.32.25",
+    "server_port":8388,
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "password":"password",
+    "timeout":600,
+    "method":"aes-256-cfb"
+}
+
+
+ */
