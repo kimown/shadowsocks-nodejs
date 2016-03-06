@@ -89,3 +89,10 @@ function decimal2hex(decimal){
     var decimal=Number(decimal);
     return decimal.toString(16);
 }
+
+/**
+ * 十进制转二进制
+ */
+function decimal2hex (){
+
+}
