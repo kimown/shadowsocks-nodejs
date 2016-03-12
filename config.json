@@ -5,5 +5,8 @@
     "local_port":1080,
     "password":"password",
     "timeout":600,
-    "method":"aes-256-cfb"
+    "method":"aes-256-cfb",
+    "file_exchange":{
+        "http://oss-hz.qianmi.com/x-site/test/public/javascripts/jquery/jquery-1.11.3.min.js":"/tmp/replace.txt"
+    }
 }
